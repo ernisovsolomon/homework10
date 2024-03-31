@@ -74,3 +74,86 @@
 
 # hd = Rectangle(1920, 1080)
 # print(hd.area())
+'''
+Задача 4: Композиция - Класс Комната
+Создайте класс Room с атрибутами, представляющими список мебели.
+Используйте композицию, создав отдельные классы для разных типов мебели,
+и добавьте их в класс Room.
+'''
+# class Furniture:
+#     def __init__(self, name):
+#         self.name = name
+    
+
+
+# class Chair(Furniture):
+#     pass
+
+# class Table(Furniture):
+#     pass
+
+# class Bed(Furniture):
+#     pass
+
+
+# class Room:
+#     def __init__(self, roomname):
+#         self.roomname = roomname
+#         self.furniture = []
+
+#     def add_furniture(self, item):
+#         if isinstance(item, Furniture):
+#             self.furniture.append(item)
+#         else:
+#             pass
+
+#     def remove_furniture(self, item):
+#         if item in self.furniture:
+#             self.furniture.remove(item)
+#         else:
+#             print('Такой мебели нет')
+
+#     def room_info(self):
+#         print('Список мебели в спальне: ')
+#         for item in living_room.furniture:
+#             print(f'\t {item.name}')
+
+
+# bedroom = Room('Спальная комната')
+# chair1 = Chair('Кресло AeroCool')
+# chair2 = Chair('Кресло Anda Seat')
+# table1 = Table('Длинный рабочий стол')
+# bed1 = Bed('Кровать на двоих')
+
+# bedroom.add_furniture(chair1)
+# bedroom.add_furniture(chair2)
+# bedroom.add_furniture(table1)
+# bedroom.add_furniture(bed1)
+
+
+# bedroom.room_info()
+
+# bedroom.remove_furniture(chair1)
+
+# bedroom.room_info()
+'''
+Задача 5: Абстрактный Класс - Устройство
+Создайте абстрактный класс Device с абстрактным методом turn_on.
+Создайте производные классы, такие как Laptop и Smartphone, реализующие метод turn_on.
+'''
+# class Device:
+#     def __init__(self, name) -> None:
+#         self.name = name
+    
+# class Laptop(Device):
+#     def turn_on(self):
+#         print(f'Ваш {self.name} включился!')
+# class Smartphone(Device):
+#     def turn_on(self):
+#         print(f'Ваш {self.name} включился!')
+
+# laptop = Laptop('Macbook')
+# phone = Smartphone('iPhone')
+
+# laptop.turn_on()
+# phone.turn_on()
